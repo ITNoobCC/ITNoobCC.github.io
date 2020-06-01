@@ -1,0 +1,99 @@
+﻿<html lang="en">
+
+<head>
+  <title>ОПЛАТА</title>
+  <link rel="stylesheet" href="css/styles.css" >
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+  <div class="carousel-wrapper">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <div class="carousel-item item-1">
+      <div class="card-block">
+        <h1 class="title-head">Банковская карта</h1>
+        <div class="bankCardBack">
+          <div class="bankCardBackBlackLine"></div>
+          <img src="image/cvc-icon2.png" class="cvc-icon" alt="сredit-card-icon">
+          <input class="card-input-cvc" placeholder="123" type="number" required id="input-cvc"
+            maxlength="3">
+          <div class="card-input-p">
+            <p>Введите последние 3 цифры с обратной стороны карты</p>
+          </div>
+        </div>
+        <div class="bankCardFront">
+          <p class="card-p">ВВЕДИТЕ ДАННЫЕ КАРТЫ ДЛЯ ОПЛАТЫ</p>
+          <img src="image/credit-card-icon2.png" class="credit-card-icon" alt="сredit-card-icon">
+          <img src="image/visa.png" class="visa-icon" alt="сredit-card-icon">
+          <input class="card-input" placeholder="1245678901234567" required id="input-numberCard" type="number"
+            maxlength="16">
+          <p class="card-p">СРОК<br> ДЕЙСТВИЯ</p>
+          <img src="image/calendar-icon2.png" class="calendar-icon" alt="сredit-card-icon">
+          <img src="image/master-card.png" class="master-card" alt="сredit-card-icon">
+          <select size="1" class="mounthCard">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select size="1" class="yearCard">
+            <option value="1">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="20010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option selected value="2020">2020</option>
+          </select>
+          <input type="text" class="card-input-name" placeholder="Имя Фамилия" required maxlength="40" id="input-name">
+          <img src="image/person-icon2.png" class="person-icon" alt="сredit-card-icon">
+        </div>
+      </div>
+      <button type="button" id="btnSend" value="Send" class="btnSend">SEND</button>
+      <a class="arrow arrow-next" href="#item-2"></a>
+    </div>
+
+    <div class="carousel-item item-2">
+      <div class="mobileBlock">
+        <h1 class="title-head">Мобильная связь</h1>
+        <div class="mobileCardBlock" id="mobileBlock">
+          <h2 class="phoneOperator" id="operatorMobile">ОПЕРАТОР</h2>
+          <input type="tel" id="phone" name="phone" placeholder="+7(999)999-999-99" class="phone">
+        </div>
+      </div>
+      <button type="button" id="btnSendPhone" value="Send" class="btnSend">SEND</button>
+      <a class="arrow arrow-prev" href="#item-1"></a>
+    </div>
+  </div>
+
+  <script src="js/validation.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/libs/jquery.maskedinput.min.js"></script>
+  <!-- <script src="js/phone.js"></script> -->
+</body>
+
+</html>
